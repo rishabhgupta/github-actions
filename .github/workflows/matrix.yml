@@ -1,0 +1,14 @@
+name: Matix
+on: push
+
+jobs:
+  node-verion:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log node version
+        run: node -v
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 8
+      - name: Log node version
+        run: node -v
